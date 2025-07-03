@@ -21,3 +21,6 @@ Route::post('/login', [AuthController::class, 'login']);
 Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth:sanctum');
 Route::apiResource('employees', EmployeeController::class);
 Route::post('/programari', [ProgramareController::class, 'store']);
+Route::get('/test', function () {
+    return response()->json(['status' => 'ok']);
+});
