@@ -15,6 +15,7 @@ use App\Http\Controllers\ProgramareController;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+Route::get('/', fn() => 'Backend online');
 
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
